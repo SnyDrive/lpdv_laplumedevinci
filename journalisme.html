@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<p style="position:absolute;top:-150px;"><a id="edititre" name="lpdv"></a></p>
+<head>
+  <meta charset="UTF-8">
+  <title>La Plume De Vinci</title>
+  <link rel = "manifest" href = "/ manifest.json">
+  <link href="stylesheet2.css" rel="stylesheet"/>
+  <link href="icone.ico" rel="icon"/>
+  <script type="text/javascript" src="pwa.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&display=swap" rel="stylesheet"/>
+  <script type="text/javascript">
+        document.oncontextmenu = new Function("return false");
+  </script>
+  <link rel="canonical" href="http://laplumedevinci.fr"/>
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="LPDV - Journalisme" />
+	<meta property="og:description" content="Venez découvrir l'axe journalisme by LPDV" />
+	<meta property="og:url" content="http://laplumedevinci.fr" />
+	<meta property="og:site_name" content="LPDV - Journalisme" />
+</head>
+
+<style>
+
+.tit, .tit2
+{color:black;font-size:28px;transition:all.8s;}
+
+@media only screen and (max-width:1110px)
+{
+	#cartes
+	{width:555px;height:auto;margin-left: auto;margin-right: auto;margin-bottom:115px;padding:9px;border-radius:25px;background-color:firebrick;color:white;-moz-transition:all.4s;-webkit-transition:all.4s;}
+
+    #modifcontainer
+    {bottom:-1000px;}
+    
+    #adaptdiv2
+    {display: initial;}
+
+    #flip
+    {height:1492px;}
+}
+
+@media only screen and (min-width:1111px)
+{
+	#cartes
+	{position:relative;width:30%;height:auto;margin-left:0px;margin-bottom:115px;padding:9px;margin-right:2%;border-radius:75px;box-shadow: 5px 0px 5px black;filter: grayscale(0.25);background-color:firebrick;color:black;-moz-transition:all.6s;-webkit-transition:all 1.4s ease-out;}
+
+    #modifcontainer
+    {bottom:-666px;}
+    
+    #adaptdiv2
+    {display: flex;left:35%}
+
+    #flip
+    {height:777px;}
+}
+
+td
+{border:0px solid firebrick;}
+
+td
+{text-align:center;width:300px;height:187px;border-radius:95px;color:green;text-decoration:underline transparent;transition:all .9s;transition-timing-function: ease-out;}
+td:hover
+{background-color:rgb(178,34,34,0.66);color:white;cursor:pointer;border-radius:4px;}
+
+.a5
+{font-size:33px;}
+
+.altern .a5
+{-moz-transition:all 1.4s;-webkit-transition:all 1.4s;}
+.altern:hover .a5
+{color:white;}
+
+table
+{margin-left:5%;margin-right:5%;-moz-user-select:none;-webkit-user-select:none;border-collapse: collapse;}
+
+@media only screen and (max-width:1054px)
+{
+    #edititre
+    {font-size: 44px;}
+    
+    #modif1
+    {display: none;}
+    #modif2
+    {display: block;}
+    #hov
+    {display: none;}
+}	
+
+@media only screen and (min-width:1055px)
+{	
+    #edititre
+    {font-size: 33px;}
+    
+    #modif1
+    {display: block;}
+    #modif2
+    {display: none;}
+
+    #hov
+    {background-image:url(fondjournalisme.jpg);background-size:cover;position:absolute;opacity:0.6;width:104%;height:777px;right:-2%;left:-2%;z-index:0;filter:brightness(50%) blur(1em);transition:all 1.4s;}
+    #hov:hover
+    {opacity:1;left:-10%;right:-10%;width:120%;filter:brightness(80%) blur(0.5em);margin-top:-45px;padding-bottom:45px;}
+}
+  
+.tit
+{background-color: transparent; color: white;line-height: 151%;}
+   
+.tit2
+{background-color: transparent; color: white;line-height: 151%;text-decoration:underline transparent;}
+.tit2:hover
+{letter-spacing:3px;margin-left:3px;text-decoration:underline white;}
+
+.hov2:hover #hov
+{opacity:1;left:-10%;right:-10%;width:120%;}
+
+@media only screen and (max-width:1249px)
+{
+#description
+{color:white;text-align:justify;padding:10px;padding-right:15px;margin-top:66px;line-height:40px;font-size:30px;}
+}
+
+</style>
+
+<body onkeypress="showChar(event);">
+
+<br></br><br></br>
+<p id="astyle"></p>
+<h1 id="h1" style="height: 60px">Journalisme</h1>
+
+<p style="text-align:center;margin-top:-33px" id="pgif"><br></br>
+<video autoplay="1" poster="oeil.png" height="400px" width="auto" src="oeil-modifie.mp4" id="gif1" style="border:none;border-radius:700px" muted preload="metadata">
+</video>
+
+<p id="description">
+<a id="text-content">
+Des articles d’actualité, aux chroniques de culture générale, en passant par les interviews et pages consacrées à la Vie Associative du Pôle, les différents numéros du journal Le Point De Vue sauront plaire au plus grand nombre.<br></br>
+L’objectif de cet axe est de publier un journal mensuel, issu du travail de 3 équipes (Rédaction, Relecture et Mise en page) durant le mois précédant la sortie du numéro.<br></br>
+Chaque membre de l’association est libre de rejoindre une ou plusieurs équipes afin d’apporter de la diversité d’opinion et du dynamisme au sein de celles-ci. Ces dernières, variables chaque mois, donnent le choix à chacun de s’engager au début du mois où il/elle est disponible.<br></br>
+En plus d’être une source d’information de qualité (relue à plusieurs reprises par des personnes différentes), le journal, de par sa visibilité, permet à tous de s’exprimer dans des chroniques dédiées, disponible sur le site de l’association.
+</a>
+</p>
+
+<p id="description"><a id="adescription" style="text-decoration:underline"><strong>Les éditions du journal</strong></a><br></br></p>
+
+<div style="width: 102%;margin-left: -1%;padding-bottom: 44px;padding-top: 9px" id="hovhov">
+<p>
+<table style="width:auto;height:100%" id="modif1">
+
+<tr>
+<td class="altern" style="width: 16%" onclick="window.location.href='#ed1'"><br></br><br><a class="a5">Édition<br>n° 1</a><br></br><br>10/09/2020</td>
+<td class="altern" style="width: 16%" onclick="window.location.href='#ed2'"><br></br><br><a class="a5">Édition<br>n° 2</a><br></br><br>02/11/2020</td>
+<td class="altern" style="width: 16%" onclick="window.location.href='#ed3'"><br></br><br><a class="a5">Édition<br>n° 3</a><br></br><br>08/12/2020</td>
+<td class="altern" style="width: 16%" onclick="window.location.href='#ed4'"><br></br><br><a class="a5">Édition<br>n° 4</a><br></br><br>22/01/2021</td>
+<td class="altern" style="width: 16%"><br></br><br><a class="a5" style="text-decoration: line-through">Édition<br>n° 5</a><br></br><br>Date à définir</td>
+<td class="altern" style="width: 16%"><br></br><br><a class="a5" style="text-decoration: line-through">Édition<br>n° 6</a><br></br><br>Date à définir</td>
+</tr>
+
+<tr>
+<td class="altern" onclick="window.location.href='#ed7'"><br></br><br><a class="a5" style="text-decoration: line-through">Édition<br>n° 7</a><br></br><br>Date à définir</td>
+<td class="altern" onclick="window.location.href='#ed8'"><br></br><br><a class="a5" style="text-decoration: line-through">Édition<br>n° 8</a><br></br><br>Date à définir</td>
+<td class="altern" onclick="window.location.href='#ed9'"><br></br><br><a class="a5" style="text-decoration: line-through">Édition<br>n° 9</a><br></br><br>Date à définir</td>
+<td class="altern" onclick="window.location.href='#ed10'"><br></br><br><a class="a5" style="text-decoration: line-through">Édition<br>n° 10</a><br></br><br>Date à définir</td>
+<td class="altern" onclick="window.location.href='#ed11'"><br></br><br><a class="a5" style="text-decoration: line-through">Édition<br>n° 11</a><br></br><br>Date à définir</td>
+<td class="altern" onclick="window.location.href='#ed12'"><br></br><br><a class="a5" style="text-decoration: line-through">Édition<br>n° 12</a><br></br><br>Date à définir</td>
+</tr>
+
+</table>
+</p>
+</div>
+
+<table style="width:100%;height:100%;margin-left: 0px" id="modif2">
+
+<tr>
+<td class="altern"><br></br><br><a class="a5" href="#ed1">Édition<br>n° 1</a><br></br><br>10/09/2020</td>
+<td class="altern"><br></br><br><a class="a5" href="#ed2">Édition<br>n° 2</a><br></br><br>02/11/2020</td>
+<td class="altern"><br></br><br><a class="a5" href="#ed3">Édition<br>n° 3</a><br></br><br>08/12/2020</td>
+<td class="altern"><br></br><br><a class="a5" href="#ed4">Édition<br>n° 4</a><br></br><br>22/01/2021</td>
+</tr>
+
+<tr>
+<td class="altern"><br></br><br><a class="a5" style="text-decoration: line-through" href="#ed5">Édition<br>n° 5</a><br></br><br>Date à définir</td>
+<td class="altern"><br></br><br><a class="a5" style="text-decoration: line-through" href="#ed6">Édition<br>n° 6</a><br></br><br>Date à définir</td>
+<td class="altern"><br></br><br><a class="a5" style="text-decoration: line-through" href="#ed7">Édition<br>n° 7</a><br></br><br>Date à définir</td>
+<td class="altern"><br></br><br><a class="a5" style="text-decoration: line-through" href="#ed8">Édition<br>n° 8</a><br></br><br>Date à définir</td>
+</tr>
+
+<tr>
+<td class="altern"><br></br><br><a class="a5" style="text-decoration: line-through" href="#ed9">Édition<br>n° 9</a><br></br><br>Date à définir</td>
+<td class="altern"><br></br><br><a class="a5" style="text-decoration: line-through" href="#ed10">Édition<br>n° 10</a><br></br><br>Date à définir</td>
+<td class="altern"><br></br><br><a class="a5" style="text-decoration: line-through" href="#ed11">Édition<br>n° 11</a><br></br><br>Date à définir</td>
+<td class="altern"><br></br><br><a class="a5" style="text-decoration: line-through" href="#ed12">Édition<br>n° 12</a><br></br><br>Date à définir</td>
+</tr>
+
+</table>
+
+<!--    BOOKCASE FLIPHTML5
+<iframe style="width:70vw;height:300px;margin-left: 15vw" src='https://fliphtml5.com/bookcase/tiyzg/silver'  seamless='seamless' scrolling='no' frameborder='0' allowtransparency='true' allowfullscreen ></iframe>
+-->
+
+<p style="padding-top:-111px;padding-bottom:50px;margin-top:111px"><a name="hs1"></a></p>
+<p style="width:100%;height:2px;background-color:firebrick"></p>
+
+<div>
+<p style="text-align:center">
+<a id="edititre"><br></br>Hors-Séries n° 1</a></p>
+
+<iframe  style="width:60%;height:66vh;margin-left:20%;border: 3px dotted firebrick;border-radius:17px"  src="https://online.fliphtml5.com/tthwy/oqrs/"  
+seamless="seamless" scrolling="no" frameborder="0" 
+allowtransparency="true" allowfullscreen="true"></iframe>
+
+<p style="text-align: center"><a class="tit2" style="color: black;text-decoration: underline" href="https://online.fliphtml5.com/tthwy/oqrs/" target="_blank">Ouvrir en grand écran</a>
+</p>
+</div>
+
+<p style="padding-top:-25px;padding-bottom:50px;margin-top:111px"><a name="ed4"></a></p>
+<p style="width:100%;height:2px;background-color:firebrick"></p>
+
+<div>
+<p style="text-align:center">
+<a id="edititre"><br></br>Édition 4</a></p>
+
+<iframe  style="width:60%;height:66vh;margin-left:20%;border: 3px dotted firebrick;border-radius:17px"  src="https://online.fliphtml5.com/tthwy/qofq/"  
+seamless="seamless" scrolling="no" frameborder="0" 
+allowtransparency="true" allowfullscreen="true"></iframe>
+
+<p style="text-align: center"><a class="tit2" style="color: black;text-decoration: underline" href="https://online.fliphtml5.com/tthwy/qofq/" target="_blank">Ouvrir en grand écran</a>
+</p>
+</div>
+
+<p style="padding-top:-25px;padding-bottom:50px;margin-top:111px"><a name="ed3"></a></p>
+<p style="width:100%;height:2px;background-color:firebrick"></p>
+
+<div>
+<p style="text-align:center">
+<a id="edititre"><br></br>Édition 3</a></p>
+
+<iframe  style="width:60%;height:66vh;margin-left:20%;border: 3px dotted firebrick;border-radius:17px"  src="https://online.fliphtml5.com/tthwy/bdcv/"  
+seamless="seamless" scrolling="no" frameborder="0" 
+allowtransparency="true" allowfullscreen="true"></iframe>
+
+<p style="text-align: center"><a class="tit2" style="color: black;text-decoration: underline" href="https://online.fliphtml5.com/tthwy/bdcv/" target="_blank">Ouvrir en grand écran</a>
+</p>
+</div>
+
+<p style="text-align: center">
+    <img src="%C3%A9quipe-journal.png" style="width: 90%;height: auto;max-width: 600px;min-width: 550px"></img>
+</p>
+
+<p style="padding-top:25px;padding-bottom:50px">
+</p>
+<p style="width:100%;height:2px;background-color:firebrick"></p>
+
+<p style="padding-top:25px;padding-bottom:50px"><a name="ed2"></a></p>
+<p style="width:100%;height:2px;background-color:firebrick"></p>
+
+<div>
+<p style="text-align:center">
+<a id="edititre"><br></br>Édition 2</a></p>
+
+<iframe  style="width:60%;height:66vh;margin-left:20%;border: 3px dotted firebrick;border-radius:17px"  src="https://online.fliphtml5.com/tthwy/rkrq/"  
+seamless="seamless" scrolling="no" frameborder="0" 
+allowtransparency="true" allowfullscreen="true"></iframe>
+
+<p style="text-align: center"><a class="tit2" style="color: black;text-decoration: underline" href="https://online.fliphtml5.com/tthwy/rkrq/" target="_blank">Ouvrir en grand écran</a>
+</p>
+</div>
+
+<p style="padding-top:25px;padding-bottom:50px">
+</p>
+<p style="width:100%;height:2px;background-color:firebrick"></p>
+
+<p style="padding-top:25px;padding-bottom:50px"><a name="ed1"></a></p>
+<p style="width:100%;height:2px;background-color:firebrick"></p>
+
+<div>
+<p style="text-align:center">
+<a id="edititre"><br></br>Édition 1</a></p>
+
+<iframe  style="width:60%;height:66vh;margin-left:20%;border: 3px dotted firebrick;border-radius:17px" src="https://online.fliphtml5.com/tthwy/genx/"
+seamless="seamless" scrolling="no" frameborder="0" 
+allowtransparency="true" allowfullscreen="true"></iframe>
+<br>
+<p style="text-align: center"><a class="tit2" style="color: black;text-decoration: underline" href="https://online.fliphtml5.com/tthwy/genx/" target="_blank">Ouvrir en grand écran</a>
+</p>
+</div>
+
+<p style="padding-top:25px;padding-bottom:50px">
+</p>
+<p style="width:100%;height:2px;background-color:firebrick"></p>
+
+<!-- </p> -->
+
+<!-- <p style="text-align:center"> -->
+<!-- <a id="edititre" name="ed4"><br></br>Édition 4</a></p> -->
+
+<!-- </p> -->
+
+<!-- <p style="text-align:center"> -->
+<!-- <a id="edititre" name="ed5"><br></br>Édition 5</a></p> -->
+
+<!-- </p> -->
+
+<!-- <p style="text-align:center"> -->
+<!-- <a id="edititre" name="ed6"><br></br>Édition 6</a></p> -->
+
+<!-- </p> -->
+
+<!-- <p style="text-align:center"> -->
+<!-- <a id="edititre" name="ed7"><br></br>Édition 7</a></p> -->
+
+<!-- </p> -->
+
+<!-- <p style="text-align:center"> -->
+<!-- <a id="edititre" name="ed8"><br></br>Édition 8</a></p> -->
+
+<!-- </p> -->
+
+<!-- <p style="text-align:center"> -->
+<!-- <a id="edititre" name="ed9"><br></br>Édition 9</a></p> -->
+
+<!-- </p> -->
+
+<!-- <p style="text-align:center"> -->
+<!-- <a id="edititre" name="ed10"><br></br>Édition 10</a></p> -->
+
+<!-- </p> -->
+
+<!-- <p style="text-align:center"> -->
+<!-- <a id="edititre" name="ed11"><br></br>Édition 11</a></p> -->
+
+<!-- </p> -->
+
+<!-- <p style="text-align:center"> -->
+<!-- <a id="edititre" name="ed12"><br></br>Édition 12</a></p> -->
+
+<!-- </p> -->
+
+<br></br><br>
+
+<div id="cartes" class="alterncartes" style="margin-top:77px;margin-left:auto;margin-right:auto">
+<p style="text-align:center">
+<a class="tit" style="font-size:38px"><strong>Contact</strong></a><br></br>
+<a class="tit" style="font-size:22px;margin-bottom"><em>Président de l'axe journalisme<br>Rédacteur en chef</em></a><br>
+</p>
+<p style="color:white;text-align:center"><br>
+<a class="tit" style="font-size:33px">Teo SAMENAIRE</a><br></br><br>
+<img src="teo.png" style="position:relative;width:55%;height:auto;border-radius: 22px;max-width:444px"></img><br></br><br></br>
+<a class="tit2" href="mailto:teo.samenaire@edu.devinci.fr">M'envoyer un mail</a>
+</p>
+</div>
+
+<ul id="ul1" style="z-index: 9">
+  <li><a id="a1" class="active" style="color:white" href="index.html#lpdv">Accueil</a></li>
+  <li id="li21"><a id="a1" href="ecriture.html" style="margin-top:-10px">Lecture & <br>Écriture de fiction</a></li>
+  <li id="li2"><a id="a1" href="journalisme.html">Journalisme</a></li>
+  <li style="float:right"><a id="a1" class="active" style="color:white" href="about.html">A propos</a></li>
+  <li style="float:right;width:131px" id="li2"><a id="a1" href="contact.html">Contact</a></li>
+</ul>
+
+<!-- Start of HubSpot Embed Code -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/8899586.js"></script>
+<!-- End of HubSpot Embed Code -->
+
+<div style="position:absolute;width:102%;left:-1%;border-radius:0px,border:none;background-color:#303030;color:white;text-align:center;height:auto;padding-top:70px" id="modifcontainer">
+	<div style="width:50%;float:left">
+		<div id="p7">
+			<p>
+				<!-- <form>
+				  <div>
+					<label for="example" style="font-family:'Lora', serif;font-size:33px">Veuillez saisir votre demande</label><br></br><br>
+					<textarea style="width:60%;height:222px;max-height:300px;max-width:60%;min-width:60%" alt="Veuillez saisir votre demande"></textarea>
+				  </div>
+				  <div id="curseur">
+					<a href="mailto:laplume.2vinci@outlook.com?subject=LPDV - Question/Contact&body=Bonjour%0D%0A%0D%0ASuite%20à%20ma%20visite%20sur%20votre%20site%20internet,%20je%20souhaitais%20vous%20poser%20une%20question.%0A%0D{Insérez%20votre%20question%20ici}%0D%0A%0D%0AVoici%20mes%20coordonnées%20:%0D%0A{Civilité}%20{Prénom}%20{Nom}">
+                        <input type="submit" value="Envoyer" style="background-color:black;width:60.5%;height:44px;color:white;border:0;font-family:'Lora', serif;font-size:33px">
+                    </a>
+				  </div>
+				</form> -->
+			<br></br><br></br>
+			<a id="a3" style="text-decoration:none;color:white;cursor:default"><strong>Contact : </strong></a><a id="a3" href="mailto:laplume.2vinci@outlook.com">Nous envoyer un mail</a><a id="a3" style="text-decoration:none;color:white;cursor:default"> (laplume.2vinci@outlook.com)<br></br><br></br>
+            <a href="https://www.facebook.com/La-Plume-De-Vinci-117022286720924" target = "_blank"><img src="facebook-img.png" id="social" style="height:79px;padding-bottom:9px;width:auto"></img></a><a href="https://www.instagram.com/lpdv_laplumedevinci/" target = "_blank"><img src="instagram-img.png" id="social" style="height:92px;width:auto"></img></a><a href="https://www.linkedin.com/in/la-plume-de-vinci-0b837b1aa" target = "_blank"><img src="linkedin-img.png" id="social" style="height:102px;width:auto"></img></a><br>
+			</p>
+		</div>
+	</div>
+	<div style="width:50%;float:right;filter:grayscale:(100%)">
+		<p id="p7;padding:2vh"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.010845113799!2d2.2337229160716596!3d48.896130479291344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66501d272b3c5%3A0xa3d422deeac71c6d!2s12%20Avenue%20L%C3%A9onard%20de%20Vinci%2C%2092400%20Courbevoie!5e0!3m2!1sfr!2sfr!4v1604995314938!5m2!1sfr!2sfr" width="60%" height="400px" frameborder="0" style="border:0;border-radius:25px" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
+	</div>
+</div>
+
+<div id="divul" style="position:fixed;top:0px;left:0px;width:100%;z-index:8;background-color:white"></div>
+<p style="text-align:center;position:fixed;bottom:2%;left:48%"><a href="#lpdv"><button id="up"><img src ="up.gif" height="66px" width="auto" style="margin-top:-6px;filter:invert(1)"></img></button></a></p>
+<svg class="mySVG">
+
+	<defs>  
+        <linearGradient id="logo-gradient" x1="50%" y1="0%" x2="50%" y2="100%" > 
+            
+            <stop offset="0%" stop-color="#0073c1">
+                <animate attributeName="stop-color" values="#ff464f;#0073c1; #ff8900; #0073c1;#ff464f" dur="4s" repeatCount="indefinite"></animate>
+            </stop>
+
+            <stop offset="100%" stop-color="#ff8900">
+                <animate attributeName="stop-color" values="#ff8900;#ff464f; #0073c1;#ff464f; #ff8900" dur="4s" repeatCount="indefinite"></animate>
+            </stop>
+
+        </linearGradient> 
+    </defs>
+
+  <path fill="none" stroke="url(#logo-gradient)" stroke-width="100" id="line" d="M1 0 L2 1 L3000 0 Z0" />
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+<script>
+var line = document.getElementById("line");
+var length = line.getTotalLength();
+
+line.style.strokeDasharray = length;
+
+line.style.strokeDashoffset = length;
+
+window.addEventListener("scroll", myFunction);
+
+function myFunction() {
+
+var a = 1.95;
+var b = 2907;
+
+var scrollpercent = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+
+  var draw = length * scrollpercent/a * (window.innerWidth/b);
+  
+  line.style.strokeDashoffset = length - draw;
+}
+</script>
+<!--
+<script type="text/javascript">
+	if(window.innerWidth < 1054)
+	{
+		document.oncontextmenu = new Function("return false");
+		alert('Pour apprécier pleinement la lecture des journaux numériques, nous te proposons de regarder le site sur un ordinateur ! 😉');
+	}
+</script>
+-->
+</body>
+</html>

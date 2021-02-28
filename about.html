@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<p style="position:absolute;top:-150px;"><a name="lpdv"></a></p>
+
+
+<!--  *********************  DEBUT DU HEADER  *********************  -->
+<head>
+  <meta charset="UTF-8">
+  <title>La Plume De Vinci</title>
+  <link rel = "manifest" href = "/ manifest.json">
+  <script type="text/javascript" src="pwa.js"></script>
+  <link href="stylesheet2.css" rel="stylesheet"/>
+  <link href="icone.ico" rel="icon"/>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&display=swap" rel="stylesheet"/>
+  <script type="text/javascript">
+        document.oncontextmenu = new Function("return false");
+  </script>
+  <link rel="canonical" href="http://laplumedevinci.fr"/>
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="La Plume De Vinci" />
+	<meta property="og:description" content="Prendre son envol dans cette littérature qui  nous entoure" />
+	<meta property="og:url" content="http://laplumedevinci.fr" />
+	<meta property="og:site_name" content="La Plume De Vinci" />
+</head>
+<!--  **********************  FIN DU HEADER  **********************  -->
+    
+<style>
+
+/* BOUTON LIEN VERS LA PAGE CONTACT */
+#butcontact
+{color:white;position:absolute;font-size:30px;font-family:'Lora', Serif;border:4px solid white;border-radius:25px;height:95px;background-color:firebrick;transition:all.8s;}
+#butcontact:hover
+{cursor:pointer;background-color:transparent;color:firebrick;border:4px solid firebrick;}
+
+
+@media only screen and (max-width:1110px)
+{
+#troucontact
+{padding-top:333px;}
+
+#butcontact
+{width:70%;left:15%;}
+}
+
+@media only screen and (min-width:1111px)
+{
+
+#troucontact
+{padding-top:150px;}
+
+#butcontact
+{display: none;}
+
+#text-title
+{text-decoration: underline;}
+
+#text-content
+{font-family:'Lora', serif;animation-duration: 11s;animation-name: slidein;}
+}
+
+@media only screen and (max-width:1739px)
+{
+
+#text-title, #text-content
+{font-family:'Lora', serif;color:black;font-size:40px;}
+
+#papyrus
+{margin:10px;text-align:justify;padding-right:60px;line-height:30px;background-color:white;}
+#papyspan
+{margin-right:0px;}
+}
+
+@media only screen and (min-width:1740px)
+{
+
+#text-title, #text-content
+{font-family:'Lora', serif;color:black;font-size:28px;}
+
+#papyrus
+{margin-left:4%;margin-right:4%;border-radius:100px;text-align:justify;padding:10%;line-height:175%;opacity:0.88;filter:grayscale(0.25);background-image:url('papyrus.png');background-size:cover;background-repeat:no-repeat;font-weight:bold;}
+#papyspan
+{margin-right:60px;}
+}
+
+#app
+{color:firebrick;transition:all.7s;}
+#app:hover
+{color:ghostwhite;}
+
+</style>
+
+<body onload="typeWriter()">
+
+<br></br><br></br>
+<p id="astyle"></p>
+<h1>A propos</h1>
+<p style="text-align:center;margin-top:-33px"><br>
+<br></br>
+<a style="color:firebrick;font-size:28px;font-family: 'Lora', serif"><strong><marquee width="265px" heigth="28px" scrollamount="4" behavior="alternate">Suis-nous !</marquee></strong></a><br>
+<a href="https://www.facebook.com/La-Plume-De-Vinci-117022286720924" target = "_blank"><img src="facebook-img.png" id="social" style="height:79px;padding-bottom:9px;width:auto"></img></a><a href="https://www.instagram.com/lpdv_laplumedevinci/" target = "_blank"><img src="instagram-img.png" id="social" style="height:92px;width:auto"></img></a><a href="https://www.linkedin.com/company/la-plume-de-vinci" target = "_blank"><img src="linkedin-img.png" id="social" style="height:102px;width:auto"></img></a><br>
+<br></br>
+
+</p><br></br>
+
+<p id="pcontact" style="text-align:center"><a href="contact.html"><button id="butcontact"><strong>CONTACTS</strong></button></a></p>
+
+<br></br><br></br><br></br>
+
+<p id="papyrus" style="margin-bottom:640px">
+<a id="text-title"></a><br></br>
+<a id="text-content">
+De l’écriture de fiction à la rédaction d’articles, en passant par la transmission d’une culture littéraire, La Plume De Vinci propose des activités encore inexplorées au sein du Pôle.
+<br>
+La toute nouvelle association de Littérature et de Journalisme met sa penne au service du Pôle et de ses étudiant•e•s, dans le but d’éveiller le sens critique et la sensibilité de 
+chacun•e.
+<br>
+Elle espère ainsi ouvrir de nouvelles voies à explorer au sein de ce labyrinthe complexe qu’est votre esprit.
+<br></br>
+Nous tenons à cœur la mixité ainsi que la diversité d’opinion, voilà pourquoi nous avons pensé à une variante du « Cogito Ergosum » made in LPDV.
+<br>
+<em>« Ne pensez pas comme vous êtes, mais soyez comme vous pensez. »</em>
+<br></br>
+Laissez le colibri vous inspirer pour que vous aussi puissiez prendre votre envol avec nous dans ce monde littéraire qui nous entoure.
+<br>
+</a>
+</p>
+
+<div style="margin-top:-450px;margin-bottom:111px;margin-left: -1%;width: 101%">
+<p style="text-align:center;font-size:38px"><a href="lpdv-app-1.0.54.zip" target="_blank" download="lpdv-app-1.0.54.zip">Téléchargez l'application !</a><a style="color:black"> (13.8 Mo)</a></p>
+
+<p style="margin-top:80px;text-align:center;font-size:38px;background-color:firebrick">
+<a href="https://forms.office.com/Pages/ResponsePage.aspx?id=rrzuiObW9067pEw09MLV4GzmHNIXdlhIoXre3Kt-G-5UOFNCNTZDMjI4WTZMMUdaWDM4QUxaWjdNRC4u" target="_blank" style="color:white;line-height:259%;font-family:'Lora', serif">
+INSCRIPTIONS La Plume De Vinci
+</a>
+</p>
+</div>
+
+<ul id="ul1">
+  <li><a id="a1" class="active" style="color:white" href="index.html#lpdv">Accueil</a></li>
+  <li id="li21"><a id="a1" href="ecriture.html" style="margin-top:-10px">Lecture & <br>Écriture de fiction</a></li>
+  <li id="li2"><a id="a1" href="journalisme.html">Journalisme</a></li>
+  <li style="float:right"><a id="a1" class="active" style="color:white" href="about.html">A propos</a></li>
+  <li style="float:right;width:131px" id="li2"><a id="a1" href="contact.html">Contact</a></li>
+</ul>
+
+<!-- Start of HubSpot Embed Code -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/8899586.js"></script>
+<!-- End of HubSpot Embed Code -->
+
+<div style="position:absolute;width:102%;left:-1%;border-radius:0px,border:none;background-color:#303030;color:white;text-align:center;height:auto;padding-top:70px" id="modifcontainer">
+	<div style="width:50%;float:left">
+		<div id="p7">
+			<p>
+				<!-- <form>
+				  <div>
+					<label for="example" style="font-family:'Lora', serif;font-size:33px">Veuillez saisir votre demande</label><br></br><br>
+					<textarea style="width:60%;height:222px;max-height:300px;max-width:60%;min-width:60%" alt="Veuillez saisir votre demande"></textarea>
+				  </div>
+				  <div id="curseur">
+					<a href="mailto:laplume.2vinci@outlook.com?subject=LPDV - Question/Contact&body=Bonjour%0D%0A%0D%0ASuite%20à%20ma%20visite%20sur%20votre%20site%20internet,%20je%20souhaitais%20vous%20poser%20une%20question.%0A%0D{Insérez%20votre%20question%20ici}%0D%0A%0D%0AVoici%20mes%20coordonnées%20:%0D%0A{Civilité}%20{Prénom}%20{Nom}">
+                        <input type="submit" value="Envoyer" style="background-color:black;width:60.5%;height:44px;color:white;border:0;font-family:'Lora', serif;font-size:33px">
+                    </a>
+				  </div>
+				</form> -->
+			<br></br><br></br>
+			<a id="a3" style="text-decoration:none;color:white;cursor:default"><strong>Contact : </strong></a><a id="a3" href="mailto:laplume.2vinci@outlook.com">Nous envoyer un mail</a><a id="a3" style="text-decoration:none;color:white;cursor:default"> (laplume.2vinci@outlook.com)<br></br><br></br>
+            <a href="https://www.facebook.com/La-Plume-De-Vinci-117022286720924" target = "_blank"><img src="facebook-img.png" id="social" style="height:79px;padding-bottom:9px;width:auto"></img></a><a href="https://www.instagram.com/lpdv_laplumedevinci/" target = "_blank"><img src="instagram-img.png" id="social" style="height:92px;width:auto"></img></a><a href="https://www.linkedin.com/in/la-plume-de-vinci-0b837b1aa" target = "_blank"><img src="linkedin-img.png" id="social" style="height:102px;width:auto"></img></a><br>
+			</p>
+		</div>
+	</div>
+	<div style="width:50%;float:right;filter:grayscale:(100%)">
+		<p id="p7;padding:2vh"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.010845113799!2d2.2337229160716596!3d48.896130479291344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66501d272b3c5%3A0xa3d422deeac71c6d!2s12%20Avenue%20L%C3%A9onard%20de%20Vinci%2C%2092400%20Courbevoie!5e0!3m2!1sfr!2sfr!4v1604995314938!5m2!1sfr!2sfr" width="60%" height="400px" frameborder="0" style="border:0;border-radius:25px" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
+	</div>
+</div>
+
+<div id="divul" style="position:fixed;top:0px;left:0px;width:100%;z-index:1;background-color:white"></div>
+
+<button id="buttonsun"><span style="padding-right:77px"></span><span class="spanmail"><a id="mail" style="text-decoration:none">Viens faire un tour sur</a><br><img src="youtube.png" height="55px" style="margin-top:-25px" class="amail"></img><span class="spanmail"><a id="mail" style="padding-top:-16px" href="https://www.youtube.com/channel/UCgLo306ZFXm4FoSYz1ExUyw" target="_blank">notre chaîne YouTube !!!</a></button>
+<p style="text-align:center;position:fixed;bottom:2%;left:48%"><a href="#lpdv"><button id="up"><img src ="up.gif" height="66px" width="auto" style="margin-top:-6px;filter:invert(1)"></img></button></a></p>
+<svg class="mySVG">
+
+	<defs>  
+        <linearGradient id="logo-gradient" x1="50%" y1="0%" x2="50%" y2="100%" > 
+            
+            <stop offset="0%" stop-color="#0073c1">
+                <animate attributeName="stop-color" values="#ff464f;#0073c1; #ff8900; #0073c1;#ff464f" dur="4s" repeatCount="indefinite"></animate>
+            </stop>
+
+            <stop offset="100%" stop-color="#ff8900">
+                <animate attributeName="stop-color" values="#ff8900;#ff464f; #0073c1;#ff464f; #ff8900" dur="4s" repeatCount="indefinite"></animate>
+            </stop>
+
+        </linearGradient> 
+    </defs>
+
+  <path fill="none" stroke="url(#logo-gradient)" stroke-width="100" id="line" d="M1 0 L2 1 L3000 0 Z0" />
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+<script>
+var line = document.getElementById("line");
+var length = line.getTotalLength();
+
+line.style.strokeDasharray = length;
+
+line.style.strokeDashoffset = length;
+
+window.addEventListener("scroll", myFunction);
+
+function myFunction() {
+
+var a = 1.95;
+var b = 2907;
+
+var scrollpercent = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+
+  var draw = length * scrollpercent/a * (window.innerWidth/b);
+  
+  line.style.strokeDashoffset = length - draw;
+}
+
+var ii = 0;
+var txt = "La Plume De Vinci, c'est quoi au juste ?";
+var speed = 28;
+
+function typeWriter() {
+  if (ii < txt.length) {
+    document.getElementById("text-title").innerHTML += txt.charAt(ii);
+    ii++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+
+</body>
+</html>
